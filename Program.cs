@@ -9,7 +9,7 @@ namespace Guessing_game
         {
 
             int gok = 0;
-
+            int gokTeller = 0;
 
 
             Random number = new Random();
@@ -26,10 +26,11 @@ namespace Guessing_game
             {
                 Console.WriteLine("Raad het geheime getal tussen 1 en 100");
                 gok = int.Parse(Console.ReadLine());
+                gokTeller++;
                 if (gok == geheimGetal)
                 {
                     Console.WriteLine("Gefeliciteerd je hebt het geheime getal geraden.");
-                   
+                    Console.WriteLine($"Je hebt {gokTeller} keer geraden.");
 
                 }
 
