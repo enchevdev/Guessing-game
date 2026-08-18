@@ -36,6 +36,7 @@ namespace Guessing_game
                 catch (FormatException)
                 {
                     Console.WriteLine("Ongeldige invoer. Voer een geldig getal in.");
+                    continue;
                 }
 
                 if (gok == geheimGetal)
