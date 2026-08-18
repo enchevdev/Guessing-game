@@ -25,13 +25,24 @@ namespace Guessing_game
             while (gok != geheimGetal)
             {
                 Console.WriteLine("Raad het geheime getal tussen 1 en 100");
-                gok = int.Parse(Console.ReadLine());
-                gokTeller++;
+                
+
+                try
+                {
+                    gok = int.Parse(Console.ReadLine());
+                    gokTeller++;
+                }
+
+                catch (FormatException)
+                {
+                    Console.WriteLine("Ongeldige invoer. Voer een geldig getal in.");
+                }
+
                 if (gok == geheimGetal)
                 {
                     Console.WriteLine("Gefeliciteerd je hebt het geheime getal geraden.");
                     Console.WriteLine($"Je hebt {gokTeller} keer geraden.");
-
+                    
                 }
 
                 else if (gok > geheimGetal)
@@ -42,7 +53,7 @@ namespace Guessing_game
                 else if (gok < geheimGetal)
                 {
                     Console.WriteLine("Het geheime getal is hoger dan je gok.");
-                   
+                    
                 }
                
             }
