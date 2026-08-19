@@ -8,11 +8,9 @@
             int gok = 0;
             int gokTeller = 0;
 
-            Random number = new Random();
+            Random random = new Random();
 
-            int geheimGetal =
-
-            number.Next(1, 101);
+            int geheimGetal = random.Next(1, 101);
 
             while (gok != geheimGetal)
             {
