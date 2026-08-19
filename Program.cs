@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.Design;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace Guessing_game
+﻿namespace Guessing_game
 {
     internal class Program
     {
